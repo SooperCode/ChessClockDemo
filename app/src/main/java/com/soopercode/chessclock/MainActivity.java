@@ -73,23 +73,18 @@ public class MainActivity extends Activity {
             }
         });
 
-        final Button buttonReset = (Button)findViewById(R.id.button_reset);
-        Button buttonResetUpsideDown = (Button)findViewById(R.id.button_reset_upsidedown);
+        Button buttonReset = (Button)findViewById(R.id.button_reset);
         buttonReset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 stopLowerCounter();
-                textLower.setText(getTimeText(TOTAL_TIME_MILLIS));
-            }
-        });
-        buttonResetUpsideDown.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
                 stopUpperCounter();
+                millisRemainingUpper = TOTAL_TIME_MILLIS;
+                millisRemainingLower = TOTAL_TIME_MILLIS;
+                textLower.setText(getTimeText(TOTAL_TIME_MILLIS));
                 textUpper.setText(getTimeText(TOTAL_TIME_MILLIS));
             }
         });
-
     }
     /* ************* COUNTER CONTROLS ****************** */
 
