@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ChessClock</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="button_reset">Reset</string>
+    <string name="textview_loser">Loser!</string>
+</resources>
